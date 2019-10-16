@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1002F753BFF87003B14E9418 /* Pods_MuscleGun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8BBBD56CA186A4E3989EF2 /* Pods_MuscleGun.framework */; };
+		84CA14612357CE9E00CCC009 /* MGStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA14602357CE9E00CCC009 /* MGStartViewController.swift */; };
 		84E0B7352357C84C009ED609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7342357C84C009ED609 /* AppDelegate.swift */; };
 		84E0B7372357C84C009ED609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7362357C84C009ED609 /* SceneDelegate.swift */; };
 		84E0B7392357C84C009ED609 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7382357C84C009ED609 /* QRCodeViewController.swift */; };
@@ -15,10 +17,12 @@
 		84E0B7412357C84E009ED609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0B73F2357C84E009ED609 /* LaunchScreen.storyboard */; };
 		84E0B74A2357CF43009ED609 /* DeviceCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7492357CF43009ED609 /* DeviceCommunicationManager.swift */; };
 		C12BCE1F17FAB9D02CD4165D /* Pods_MuscleGun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85150EC3E46CDCC3142334AF /* Pods_MuscleGun.framework */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6117828AE91CCB02A90FEFA3 /* Pods-MuscleGun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuscleGun.debug.xcconfig"; path = "Target Support Files/Pods-MuscleGun/Pods-MuscleGun.debug.xcconfig"; sourceTree = "<group>"; };
+		1A8BBBD56CA186A4E3989EF2 /* Pods_MuscleGun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuscleGun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CA14602357CE9E00CCC009 /* MGStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGStartViewController.swift; sourceTree = "<group>"; };
 		84E0B7312357C84C009ED609 /* MuscleGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuscleGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E0B7342357C84C009ED609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E0B7362357C84C009ED609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C12BCE1F17FAB9D02CD4165D /* Pods_MuscleGun.framework in Frameworks */,
+				1002F753BFF87003B14E9418 /* Pods_MuscleGun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,16 +51,16 @@
 		047B13984C9321E02529E300 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6117828AE91CCB02A90FEFA3 /* Pods-MuscleGun.debug.xcconfig */,
-				8C000E974DF16A4370AE76C1 /* Pods-MuscleGun.release.xcconfig */,
+				F300BB73F4985317C116549F /* Pods-MuscleGun.debug.xcconfig */,
+				C22D64C6573955C990348DE1 /* Pods-MuscleGun.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		1A065EE0E0F298C66E967B3D /* Frameworks */ = {
+		6408F6B7C308982178865FAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				85150EC3E46CDCC3142334AF /* Pods_MuscleGun.framework */,
+				1A8BBBD56CA186A4E3989EF2 /* Pods_MuscleGun.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -67,7 +71,7 @@
 				84E0B7332357C84C009ED609 /* MuscleGun */,
 				84E0B7322357C84C009ED609 /* Products */,
 				047B13984C9321E02529E300 /* Pods */,
-				1A065EE0E0F298C66E967B3D /* Frameworks */,
+				6408F6B7C308982178865FAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +94,7 @@
 				84E0B73D2357C84E009ED609 /* Assets.xcassets */,
 				84E0B73F2357C84E009ED609 /* LaunchScreen.storyboard */,
 				84E0B7422357C84E009ED609 /* Info.plist */,
+				84CA14602357CE9E00CCC009 /* MGStartViewController.swift */,
 			);
 			path = MuscleGun;
 			sourceTree = "<group>";
@@ -109,11 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E0B7452357C84E009ED609 /* Build configuration list for PBXNativeTarget "MuscleGun" */;
 			buildPhases = (
-				2DD8AE51AC579B549F1B45E3 /* [CP] Check Pods Manifest.lock */,
+				24D4AA125623B6A4AF49BD23 /* [CP] Check Pods Manifest.lock */,
 				84E0B72D2357C84C009ED609 /* Sources */,
 				84E0B72E2357C84C009ED609 /* Frameworks */,
 				84E0B72F2357C84C009ED609 /* Resources */,
-				B5798F2799A4005FB80FADC0 /* [CP] Embed Pods Frameworks */,
+				D52B91B7988B7F11D5F8B1C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,7 +176,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2DD8AE51AC579B549F1B45E3 /* [CP] Check Pods Manifest.lock */ = {
+		24D4AA125623B6A4AF49BD23 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,17 +198,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5798F2799A4005FB80FADC0 /* [CP] Embed Pods Frameworks */ = {
+		D52B91B7988B7F11D5F8B1C7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MuscleGun/Pods-MuscleGun-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuscleGun/Pods-MuscleGun-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MuscleGun/Pods-MuscleGun-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -221,6 +231,7 @@
 				84E0B7392357C84C009ED609 /* QRCodeViewController.swift in Sources */,
 				84E0B7352357C84C009ED609 /* AppDelegate.swift in Sources */,
 				84E0B7372357C84C009ED609 /* SceneDelegate.swift in Sources */,
+				84CA14612357CE9E00CCC009 /* MGStartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +373,7 @@
 		};
 		84E0B7462357C84E009ED609 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6117828AE91CCB02A90FEFA3 /* Pods-MuscleGun.debug.xcconfig */;
+			baseConfigurationReference = F300BB73F4985317C116549F /* Pods-MuscleGun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,7 +393,7 @@
 		};
 		84E0B7472357C84E009ED609 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C000E974DF16A4370AE76C1 /* Pods-MuscleGun.release.xcconfig */;
+			baseConfigurationReference = C22D64C6573955C990348DE1 /* Pods-MuscleGun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
