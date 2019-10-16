@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		84E0B7352357C84C009ED609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7342357C84C009ED609 /* AppDelegate.swift */; };
 		84E0B7372357C84C009ED609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7362357C84C009ED609 /* SceneDelegate.swift */; };
-		84E0B7392357C84C009ED609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7382357C84C009ED609 /* ViewController.swift */; };
+		84E0B7392357C84C009ED609 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7382357C84C009ED609 /* QRCodeViewController.swift */; };
 		84E0B73C2357C84C009ED609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0B73A2357C84C009ED609 /* Main.storyboard */; };
 		84E0B73E2357C84E009ED609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E0B73D2357C84E009ED609 /* Assets.xcassets */; };
 		84E0B7412357C84E009ED609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0B73F2357C84E009ED609 /* LaunchScreen.storyboard */; };
+		84E0B74A2357CF43009ED609 /* DeviceCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7492357CF43009ED609 /* DeviceCommunicationManager.swift */; };
 		C12BCE1F17FAB9D02CD4165D /* Pods_MuscleGun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85150EC3E46CDCC3142334AF /* Pods_MuscleGun.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +22,12 @@
 		84E0B7312357C84C009ED609 /* MuscleGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuscleGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E0B7342357C84C009ED609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E0B7362357C84C009ED609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84E0B7382357C84C009ED609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84E0B7382357C84C009ED609 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		84E0B73B2357C84C009ED609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84E0B73D2357C84E009ED609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E0B7402357C84E009ED609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E0B7422357C84E009ED609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E0B7492357CF43009ED609 /* DeviceCommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCommunicationManager.swift; sourceTree = "<group>"; };
 		85150EC3E46CDCC3142334AF /* Pods_MuscleGun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuscleGun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C000E974DF16A4370AE76C1 /* Pods-MuscleGun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuscleGun.release.xcconfig"; path = "Target Support Files/Pods-MuscleGun/Pods-MuscleGun.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,6 @@
 				6117828AE91CCB02A90FEFA3 /* Pods-MuscleGun.debug.xcconfig */,
 				8C000E974DF16A4370AE76C1 /* Pods-MuscleGun.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +82,24 @@
 		84E0B7332357C84C009ED609 /* MuscleGun */ = {
 			isa = PBXGroup;
 			children = (
+				84E0B7482357CF15009ED609 /* Managers */,
 				84E0B7342357C84C009ED609 /* AppDelegate.swift */,
 				84E0B7362357C84C009ED609 /* SceneDelegate.swift */,
-				84E0B7382357C84C009ED609 /* ViewController.swift */,
+				84E0B7382357C84C009ED609 /* QRCodeViewController.swift */,
 				84E0B73A2357C84C009ED609 /* Main.storyboard */,
 				84E0B73D2357C84E009ED609 /* Assets.xcassets */,
 				84E0B73F2357C84E009ED609 /* LaunchScreen.storyboard */,
 				84E0B7422357C84E009ED609 /* Info.plist */,
 			);
 			path = MuscleGun;
+			sourceTree = "<group>";
+		};
+		84E0B7482357CF15009ED609 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				84E0B7492357CF43009ED609 /* DeviceCommunicationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E0B7392357C84C009ED609 /* ViewController.swift in Sources */,
+				84E0B74A2357CF43009ED609 /* DeviceCommunicationManager.swift in Sources */,
+				84E0B7392357C84C009ED609 /* QRCodeViewController.swift in Sources */,
 				84E0B7352357C84C009ED609 /* AppDelegate.swift in Sources */,
 				84E0B7372357C84C009ED609 /* SceneDelegate.swift in Sources */,
 			);
@@ -357,6 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P64Z2CSAL;
 				INFOPLIST_FILE = MuscleGun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P64Z2CSAL;
 				INFOPLIST_FILE = MuscleGun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
