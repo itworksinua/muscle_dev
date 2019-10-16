@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84E0B7352357C84C009ED609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7342357C84C009ED609 /* AppDelegate.swift */; };
+		84E0B7372357C84C009ED609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7362357C84C009ED609 /* SceneDelegate.swift */; };
+		84E0B7392357C84C009ED609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0B7382357C84C009ED609 /* ViewController.swift */; };
+		84E0B73C2357C84C009ED609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0B73A2357C84C009ED609 /* Main.storyboard */; };
+		84E0B73E2357C84E009ED609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E0B73D2357C84E009ED609 /* Assets.xcassets */; };
+		84E0B7412357C84E009ED609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0B73F2357C84E009ED609 /* LaunchScreen.storyboard */; };
+		C12BCE1F17FAB9D02CD4165D /* Pods_MuscleGun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85150EC3E46CDCC3142334AF /* Pods_MuscleGun.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6117828AE91CCB02A90FEFA3 /* Pods-MuscleGun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuscleGun.debug.xcconfig"; path = "Target Support Files/Pods-MuscleGun/Pods-MuscleGun.debug.xcconfig"; sourceTree = "<group>"; };
+		84E0B7312357C84C009ED609 /* MuscleGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuscleGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E0B7342357C84C009ED609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84E0B7362357C84C009ED609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84E0B7382357C84C009ED609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84E0B73B2357C84C009ED609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84E0B73D2357C84E009ED609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84E0B7402357C84E009ED609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84E0B7422357C84E009ED609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85150EC3E46CDCC3142334AF /* Pods_MuscleGun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuscleGun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C000E974DF16A4370AE76C1 /* Pods-MuscleGun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuscleGun.release.xcconfig"; path = "Target Support Files/Pods-MuscleGun/Pods-MuscleGun.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84E0B72E2357C84C009ED609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12BCE1F17FAB9D02CD4165D /* Pods_MuscleGun.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047B13984C9321E02529E300 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6117828AE91CCB02A90FEFA3 /* Pods-MuscleGun.debug.xcconfig */,
+				8C000E974DF16A4370AE76C1 /* Pods-MuscleGun.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1A065EE0E0F298C66E967B3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85150EC3E46CDCC3142334AF /* Pods_MuscleGun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E0B7282357C84C009ED609 = {
+			isa = PBXGroup;
+			children = (
+				84E0B7332357C84C009ED609 /* MuscleGun */,
+				84E0B7322357C84C009ED609 /* Products */,
+				047B13984C9321E02529E300 /* Pods */,
+				1A065EE0E0F298C66E967B3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84E0B7322357C84C009ED609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E0B7312357C84C009ED609 /* MuscleGun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E0B7332357C84C009ED609 /* MuscleGun */ = {
+			isa = PBXGroup;
+			children = (
+				84E0B7342357C84C009ED609 /* AppDelegate.swift */,
+				84E0B7362357C84C009ED609 /* SceneDelegate.swift */,
+				84E0B7382357C84C009ED609 /* ViewController.swift */,
+				84E0B73A2357C84C009ED609 /* Main.storyboard */,
+				84E0B73D2357C84E009ED609 /* Assets.xcassets */,
+				84E0B73F2357C84E009ED609 /* LaunchScreen.storyboard */,
+				84E0B7422357C84E009ED609 /* Info.plist */,
+			);
+			path = MuscleGun;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84E0B7302357C84C009ED609 /* MuscleGun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E0B7452357C84E009ED609 /* Build configuration list for PBXNativeTarget "MuscleGun" */;
+			buildPhases = (
+				2DD8AE51AC579B549F1B45E3 /* [CP] Check Pods Manifest.lock */,
+				84E0B72D2357C84C009ED609 /* Sources */,
+				84E0B72E2357C84C009ED609 /* Frameworks */,
+				84E0B72F2357C84C009ED609 /* Resources */,
+				B5798F2799A4005FB80FADC0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuscleGun;
+			productName = MuscleGun;
+			productReference = 84E0B7312357C84C009ED609 /* MuscleGun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84E0B7292357C84C009ED609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = ItWorksinUA;
+				TargetAttributes = {
+					84E0B7302357C84C009ED609 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 84E0B72C2357C84C009ED609 /* Build configuration list for PBXProject "MuscleGun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84E0B7282357C84C009ED609;
+			productRefGroup = 84E0B7322357C84C009ED609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E0B7302357C84C009ED609 /* MuscleGun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84E0B72F2357C84C009ED609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E0B7412357C84E009ED609 /* LaunchScreen.storyboard in Resources */,
+				84E0B73E2357C84E009ED609 /* Assets.xcassets in Resources */,
+				84E0B73C2357C84C009ED609 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DD8AE51AC579B549F1B45E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuscleGun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5798F2799A4005FB80FADC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuscleGun/Pods-MuscleGun-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuscleGun/Pods-MuscleGun-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MuscleGun/Pods-MuscleGun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84E0B72D2357C84C009ED609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E0B7392357C84C009ED609 /* ViewController.swift in Sources */,
+				84E0B7352357C84C009ED609 /* AppDelegate.swift in Sources */,
+				84E0B7372357C84C009ED609 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84E0B73A2357C84C009ED609 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E0B73B2357C84C009ED609 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84E0B73F2357C84E009ED609 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E0B7402357C84E009ED609 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84E0B7432357C84E009ED609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84E0B7442357C84E009ED609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E0B7462357C84E009ED609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6117828AE91CCB02A90FEFA3 /* Pods-MuscleGun.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P64Z2CSAL;
+				INFOPLIST_FILE = MuscleGun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ItWorksinUA.MuscleGun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84E0B7472357C84E009ED609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C000E974DF16A4370AE76C1 /* Pods-MuscleGun.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P64Z2CSAL;
+				INFOPLIST_FILE = MuscleGun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ItWorksinUA.MuscleGun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84E0B72C2357C84C009ED609 /* Build configuration list for PBXProject "MuscleGun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E0B7432357C84E009ED609 /* Debug */,
+				84E0B7442357C84E009ED609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E0B7452357C84E009ED609 /* Build configuration list for PBXNativeTarget "MuscleGun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E0B7462357C84E009ED609 /* Debug */,
+				84E0B7472357C84E009ED609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84E0B7292357C84C009ED609 /* Project object */;
+}
