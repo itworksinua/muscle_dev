@@ -11,12 +11,20 @@ import UIKit
 class DeviceCommunicationManager: NSObject {
     static let shared = DeviceCommunicationManager()
     var deviceSerial: String?
+    var isConnected = false
     override init(){}
     
-    func connect() -> Bool{
-        guard let _ = deviceSerial else {
-            return false
+    func connect(serial: String){
+        if isConnected {
+            self.disconnect()
         }
-        return true
+        deviceSerial = serial
+        isConnected = true
+    }
+    
+    func disconnect() {
+        isConnected = false
     }
 }
+
+

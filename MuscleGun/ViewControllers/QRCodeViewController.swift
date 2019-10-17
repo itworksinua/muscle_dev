@@ -10,7 +10,7 @@ import UIKit
 import QRCodeReader
 import AVFoundation
 
-class QRCodeViewController: UIViewController {
+class QRCodeViewController: AbstractViewController {
     
     @IBOutlet weak var previewView: QRCodeReaderView! {
         didSet {
@@ -28,7 +28,6 @@ class QRCodeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
             if response {
                 self.startScan()
@@ -38,18 +37,19 @@ class QRCodeViewController: UIViewController {
         }
     }
     
-    @IBAction func toggleTorch(_ sender: Any) {
+    @IBAction func onClickToggleTorch(_ sender: Any) {
         reader.toggleTorch()
+    }
+    
+    @IBAction func onClickEnterKeyb(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     private func checkScanPermissions() -> Bool {
         do {
             return try QRCodeReader.supportsMetadataObjectTypes()
         } catch {
-            let alert = UIAlertController(title: "Error", message: "Reader not supported by the current device", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            present(alert, animated: true, completion: nil)
-            
+            self.message(text: "Reader not supported by the current device")
             return false
         }
     }
@@ -58,14 +58,8 @@ class QRCodeViewController: UIViewController {
         guard checkScanPermissions(), !reader.isRunning else { return }
         reader.didFindCode = { result in
             print("Completion with result: \(result.value) of type \(result.metadataType)")
-            DeviceCommunicationManager.shared.deviceSerial = result.value
-            if DeviceCommunicationManager.shared.connect() {
-                
-            } else {
-                let alert = UIAlertController(title: "Error", message: "Can not connect to device", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
+            DeviceCommunicationManager.shared.connect(serial: result.value)
+            self.message(text: "\(result.value)")
         }
         
         reader.startScanning()

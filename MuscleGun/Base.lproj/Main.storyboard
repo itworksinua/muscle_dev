@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HlD-rR-2dV">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HlD-rR-2dV">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,13 +31,13 @@
                                 <state key="normal" image="icon_menu"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MuscleGun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcu-1c-asi">
-                                <rect key="frame" x="130.5" y="217.5" width="153" height="35"/>
+                                <rect key="frame" x="130.66666666666666" y="217.66666666666666" width="152.99999999999997" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="txtBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_img" translatesAutoresizingMaskIntoConstraints="NO" id="ROw-5S-LYk">
-                                <rect key="frame" x="34" y="244.5" width="346" height="332"/>
+                                <rect key="frame" x="34" y="244.66666666666663" width="346" height="332"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="owY-xj-HgY"/>
                                     <constraint firstAttribute="height" constant="332" id="v6P-v3-nh5"/>
@@ -44,13 +45,13 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfh-d9-PYf">
                                 <rect key="frame" x="25" y="747" width="364" height="45"/>
-                                <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="txtBlack"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="gJY-cg-2ls"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="SCAN TO RENT">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" name="txtWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -98,40 +99,45 @@
             </objects>
             <point key="canvasLocation" x="-741" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Device Number View Controller-->
         <scene sceneID="Ohs-gR-XKe">
             <objects>
-                <viewController id="Wxb-u2-wsi" sceneMemberID="viewController">
+                <viewController id="Wxb-u2-wsi" customClass="DeviceNumberViewController" customModule="MuscleGun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tQt-pG-Vh7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MuscleGun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjs-gO-YbA">
-                                <rect key="frame" x="130.5" y="217.5" width="153" height="35"/>
+                                <rect key="frame" x="130.66666666666666" y="217.66666666666666" width="152.99999999999997" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN TO RENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-PA-nGF">
-                                <rect key="frame" x="134.5" y="260.5" width="145" height="24"/>
+                                <rect key="frame" x="134.66666666666666" y="260.66666666666669" width="144.99999999999997" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.20 / min " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-jb-qQJ">
-                                <rect key="frame" x="153.5" y="294.5" width="107" height="24"/>
+                                <rect key="frame" x="153.66666666666666" y="294.66666666666669" width="106.99999999999997" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q4-YK-o1t">
-                                <rect key="frame" x="106" y="356.5" width="202" height="54"/>
+                                <rect key="frame" x="106" y="356.66666666666669" width="202" height="54"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycM-eB-rjN">
                                         <rect key="frame" x="10" y="0.0" width="182" height="54"/>
+                                        <color key="backgroundColor" name="txtWhite"/>
                                         <color key="tintColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="txtBlack"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wxb-u2-wsi" id="Hol-OU-XcV"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -159,6 +165,9 @@
                                     <constraint firstAttribute="width" constant="58" id="y72-Tr-tsI"/>
                                 </constraints>
                                 <state key="normal" image="btn_qrcode"/>
+                                <connections>
+                                    <segue destination="iDp-Fi-Y21" kind="show" id="1BP-pK-rPs"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN QR CODE INSTEAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyU-QT-oDS">
                                 <rect key="frame" x="210" y="705" width="144" height="14"/>
@@ -167,7 +176,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="bckgQR"/>
                         <constraints>
                             <constraint firstItem="9Q4-YK-o1t" firstAttribute="centerX" secondItem="A0d-tx-OEy" secondAttribute="centerX" id="5Lz-8k-LCk"/>
                             <constraint firstItem="yyU-QT-oDS" firstAttribute="top" secondItem="bvC-23-t4Z" secondAttribute="bottom" constant="23" id="A8i-j3-eI6"/>
@@ -187,35 +196,38 @@
                         <viewLayoutGuide key="safeArea" id="A0d-tx-OEy"/>
                     </view>
                     <navigationItem key="navigationItem" id="SzD-6A-YIz"/>
+                    <connections>
+                        <outlet property="serialNumberText" destination="ycM-eB-rjN" id="bgc-sq-chJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KEX-Ei-ACh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1109" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Code View Controller-->
         <scene sceneID="5l9-W9-rxe">
             <objects>
-                <viewController id="iDp-Fi-Y21" sceneMemberID="viewController">
+                <viewController id="iDp-Fi-Y21" customClass="QRCodeViewController" customModule="MuscleGun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iCQ-21-uaH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MuscleGun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfe-dS-y5N">
-                                <rect key="frame" x="130.5" y="217.5" width="153" height="35"/>
+                                <rect key="frame" x="130.66666666666666" y="217.66666666666666" width="152.99999999999997" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN TO RENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7F-A4-7Fz">
-                                <rect key="frame" x="134.5" y="260.5" width="145" height="23.5"/>
+                                <rect key="frame" x="134.66666666666666" y="260.66666666666669" width="144.99999999999997" height="23.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.20 / min " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi4-WN-PH0">
-                                <rect key="frame" x="153.5" y="294" width="107" height="23.5"/>
+                                <rect key="frame" x="153.66666666666666" y="294" width="106.99999999999997" height="23.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEA-w1-Db6">
@@ -225,6 +237,9 @@
                                     <constraint firstAttribute="height" constant="58" id="tsy-Pl-T7u"/>
                                 </constraints>
                                 <state key="normal" image="btn_torch"/>
+                                <connections>
+                                    <action selector="onClickToggleTorch:" destination="iDp-Fi-Y21" eventType="touchUpInside" id="hsm-a0-Lbl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XM-xL-WV9">
                                 <rect key="frame" x="253" y="624" width="58" height="58"/>
@@ -233,6 +248,9 @@
                                     <constraint firstAttribute="width" constant="58" id="rQQ-nz-206"/>
                                 </constraints>
                                 <state key="normal" image="btn_keyboard"/>
+                                <connections>
+                                    <action selector="onClickEnterKeyb:" destination="iDp-Fi-Y21" eventType="touchUpInside" id="Jw4-xK-Ojt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER ID CODE INSTEAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88m-uM-ckg">
                                 <rect key="frame" x="210" y="705" width="144" height="14"/>
@@ -240,7 +258,7 @@
                                 <color key="textColor" red="0.58431372550000005" green="0.61568627450000002" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMY-h4-TVW">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMY-h4-TVW" customClass="QRCodeReaderView" customModule="QRCodeReader">
                                 <rect key="frame" x="96" y="342" width="222" height="222"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -252,7 +270,7 @@
                                 <rect key="frame" x="96" y="342" width="222" height="222"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="bckgQR"/>
                         <constraints>
                             <constraint firstItem="jEA-w1-Db6" firstAttribute="centerY" secondItem="vDd-uc-D9i" secondAttribute="centerY" constant="200" id="2jf-v3-VnE"/>
                             <constraint firstItem="6XM-xL-WV9" firstAttribute="centerY" secondItem="jEA-w1-Db6" secondAttribute="centerY" id="2uq-pb-Umx"/>
@@ -276,6 +294,9 @@
                         <viewLayoutGuide key="safeArea" id="vDd-uc-D9i"/>
                     </view>
                     <navigationItem key="navigationItem" id="l2j-qW-bkT"/>
+                    <connections>
+                        <outlet property="previewView" destination="eMY-h4-TVW" id="h1G-SM-BvL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MeU-wH-iy0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,5 +310,14 @@
         <image name="camera_border" width="225" height="225"/>
         <image name="icon_menu" width="21" height="14"/>
         <image name="start_img" width="346" height="332"/>
+        <namedColor name="bckgQR">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="txtBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
