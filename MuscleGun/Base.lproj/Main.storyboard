@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HlD-rR-2dV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HlD-rR-2dV">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="83L-eq-IjE" kind="relationship" relationship="rootViewController" id="6gu-uH-sXX"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bhR-1a-jQU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6C-Jl-GKG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -110,29 +110,29 @@
                         <viewControllerLayoutGuide type="bottom" id="sG6-To-3L9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tQt-pG-Vh7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MuscleGun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjs-gO-YbA">
-                                <rect key="frame" x="130.66666666666666" y="185.66666666666666" width="152.99999999999997" height="35"/>
+                                <rect key="frame" x="130.66666666666666" y="212.66666666666666" width="152.99999999999997" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN TO RENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-PA-nGF">
-                                <rect key="frame" x="134.66666666666666" y="228.66666666666666" width="144.99999999999997" height="24"/>
+                                <rect key="frame" x="134.66666666666666" y="255.66666666666663" width="144.99999999999997" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.20 / min " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-jb-qQJ">
-                                <rect key="frame" x="153.66666666666666" y="262.66666666666669" width="106.99999999999997" height="24"/>
+                                <rect key="frame" x="153.66666666666666" y="289.66666666666669" width="106.99999999999997" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q4-YK-o1t">
-                                <rect key="frame" x="106" y="324.66666666666669" width="202" height="54"/>
+                                <rect key="frame" x="106" y="351.66666666666669" width="202" height="54"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycM-eB-rjN">
                                         <rect key="frame" x="10" y="0.0" width="182" height="54"/>
@@ -157,7 +157,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eis-EH-wOh">
-                                <rect key="frame" x="103" y="592" width="58" height="58"/>
+                                <rect key="frame" x="103" y="619" width="58" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="Eui-en-yX8"/>
                                     <constraint firstAttribute="width" constant="58" id="PfZ-YX-kyb"/>
@@ -165,7 +165,7 @@
                                 <state key="normal" image="btn_torch"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvC-23-t4Z">
-                                <rect key="frame" x="253" y="592" width="58" height="58"/>
+                                <rect key="frame" x="253" y="619" width="58" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="eyd-8r-qjT"/>
                                     <constraint firstAttribute="width" constant="58" id="y72-Tr-tsI"/>
@@ -176,7 +176,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN QR CODE INSTEAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyU-QT-oDS">
-                                <rect key="frame" x="210" y="673" width="144" height="14"/>
+                                <rect key="frame" x="210" y="700" width="144" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.58431372549019611" green="0.61568627450980395" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -203,6 +203,7 @@
                     <navigationItem key="navigationItem" id="SzD-6A-YIz"/>
                     <connections>
                         <outlet property="serialNumberText" destination="ycM-eB-rjN" id="bgc-sq-chJ"/>
+                        <segue destination="83L-eq-IjE" kind="show" identifier="showDeviceControl" id="Sny-Yo-pEW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KEX-Ei-ACh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -277,6 +278,9 @@ ONE STEP CLOSER TO RECOVERY! </string>
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickStop:" destination="83L-eq-IjE" eventType="touchUpInside" id="wmN-rX-Z1l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="txtWhite"/>
@@ -315,29 +319,29 @@ ONE STEP CLOSER TO RECOVERY! </string>
                         <viewControllerLayoutGuide type="bottom" id="cYQ-Rb-IvE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iCQ-21-uaH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MuscleGun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfe-dS-y5N">
-                                <rect key="frame" x="130.66666666666666" y="185.66666666666666" width="152.99999999999997" height="35"/>
+                                <rect key="frame" x="130.66666666666666" y="212.66666666666666" width="152.99999999999997" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN TO RENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7F-A4-7Fz">
-                                <rect key="frame" x="134.66666666666666" y="228.66666666666666" width="144.99999999999997" height="23.333333333333343"/>
+                                <rect key="frame" x="134.66666666666666" y="255.66666666666666" width="144.99999999999997" height="23.333333333333343"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.20 / min " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi4-WN-PH0">
-                                <rect key="frame" x="153.66666666666666" y="262" width="106.99999999999997" height="23.666666666666686"/>
+                                <rect key="frame" x="153.66666666666666" y="289" width="106.99999999999997" height="23.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" name="txtWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEA-w1-Db6">
-                                <rect key="frame" x="103" y="592" width="58" height="58"/>
+                                <rect key="frame" x="103" y="619" width="58" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="58" id="I8Z-lG-EI5"/>
                                     <constraint firstAttribute="height" constant="58" id="tsy-Pl-T7u"/>
@@ -348,7 +352,7 @@ ONE STEP CLOSER TO RECOVERY! </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XM-xL-WV9">
-                                <rect key="frame" x="253" y="592" width="58" height="58"/>
+                                <rect key="frame" x="253" y="619" width="58" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="lcu-PA-3a2"/>
                                     <constraint firstAttribute="width" constant="58" id="rQQ-nz-206"/>
@@ -359,13 +363,13 @@ ONE STEP CLOSER TO RECOVERY! </string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER ID CODE INSTEAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88m-uM-ckg">
-                                <rect key="frame" x="210" y="673" width="144" height="14"/>
+                                <rect key="frame" x="210" y="700" width="144" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.58431372550000005" green="0.61568627450000002" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMY-h4-TVW" customClass="QRCodeReaderView" customModule="QRCodeReader">
-                                <rect key="frame" x="96" y="310" width="222" height="222"/>
+                                <rect key="frame" x="96" y="337" width="222" height="222"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="222" id="YuE-vK-TFu"/>
@@ -373,7 +377,7 @@ ONE STEP CLOSER TO RECOVERY! </string>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_border" translatesAutoresizingMaskIntoConstraints="NO" id="pyb-Jr-DcW">
-                                <rect key="frame" x="96" y="310" width="222" height="222"/>
+                                <rect key="frame" x="96" y="337" width="222" height="222"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="bckgQR"/>
@@ -401,6 +405,7 @@ ONE STEP CLOSER TO RECOVERY! </string>
                     <navigationItem key="navigationItem" id="l2j-qW-bkT"/>
                     <connections>
                         <outlet property="previewView" destination="eMY-h4-TVW" id="h1G-SM-BvL"/>
+                        <segue destination="83L-eq-IjE" kind="show" identifier="showDeviceControl" id="J04-3s-yYA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MeU-wH-iy0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -427,4 +432,7 @@ ONE STEP CLOSER TO RECOVERY! </string>
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Sny-Yo-pEW"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -30,7 +30,9 @@ class QRCodeViewController: AbstractViewController {
         super.viewDidLoad()
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
             if response {
-                self.startScan()
+                DispatchQueue.main.async {
+                    self.startScan()
+                }
             } else {
                 
             }
@@ -59,7 +61,7 @@ class QRCodeViewController: AbstractViewController {
         reader.didFindCode = { result in
             print("Completion with result: \(result.value) of type \(result.metadataType)")
             DeviceCommunicationManager.shared.connect(serial: result.value)
-            self.message(text: "\(result.value)")
+            self.performSegue(withIdentifier: "showDeviceControl", sender: nil)
         }
         
         reader.startScanning()

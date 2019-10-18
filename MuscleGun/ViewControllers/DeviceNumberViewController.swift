@@ -23,6 +23,7 @@ extension DeviceNumberViewController: UITextFieldDelegate {
         if let str = textField.text, str.count > 0 {
             DeviceCommunicationManager.shared.connect(serial: str)
             textField.resignFirstResponder()
+            self.performSegue(withIdentifier: "showDeviceControl", sender: nil)
         }
         return false
     }

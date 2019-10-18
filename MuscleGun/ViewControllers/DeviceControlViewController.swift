@@ -23,4 +23,7 @@ class DeviceControlViewController: UIViewController {
         btn.layer.shadowRadius = 45.0
     }
     
+    @IBAction func onClickStop(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
