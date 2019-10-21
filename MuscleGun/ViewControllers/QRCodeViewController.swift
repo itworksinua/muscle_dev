@@ -20,14 +20,14 @@ class QRCodeViewController: AbstractViewController {
                 $0.showSwitchCameraButton = false
                 $0.showCancelButton       = false
                 $0.showOverlayView        = true
-                $0.rectOfInterest         = CGRect(x: 0.2, y: 0.2, width: 0.6, height: 0.6)
+                $0.rectOfInterest         = CGRect(x: -1, y: -1, width: 1, height: 1)
             })
         }
     }
     lazy var reader: QRCodeReader = QRCodeReader()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
             if response {
                 DispatchQueue.main.async {

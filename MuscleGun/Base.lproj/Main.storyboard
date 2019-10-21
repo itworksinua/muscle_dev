@@ -248,6 +248,9 @@
                                         <integer key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickPowerButton:" destination="83L-eq-IjE" eventType="touchUpInside" id="E7I-CI-oQY"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:30 MIN LEFT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORg-8K-YKH">
                                 <rect key="frame" x="123.66666666666669" y="554" width="167" height="29.333333333333371"/>
@@ -303,7 +306,10 @@ ONE STEP CLOSER TO RECOVERY! </string>
                     </view>
                     <navigationItem key="navigationItem" id="cOU-QK-JNB"/>
                     <connections>
-                        <outlet property="btn" destination="oFX-Uz-S1u" id="y2M-DE-42u"/>
+                        <outlet property="btnPower" destination="oFX-Uz-S1u" id="y2M-DE-42u"/>
+                        <outlet property="btnStop" destination="IYc-DO-IAU" id="Lqj-jN-5HV"/>
+                        <outlet property="lblExplanation" destination="RmY-CT-f5w" id="N5f-Iq-l9U"/>
+                        <outlet property="lblTimer" destination="ORg-8K-YKH" id="JP7-3w-rcp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ie4-fo-aqf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -64,11 +64,11 @@
 		84D19B732357E41E00BC4544 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				847C81E1235A70EF00D6E9CD /* DeviceControlViewController.swift */,
 				84D19B762357E52F00BC4544 /* AbstractViewController.swift */,
 				84E0B7382357C84C009ED609 /* QRCodeViewController.swift */,
 				84D19B742357E44200BC4544 /* DeviceNumberViewController.swift */,
 				84CA14602357CE9E00CCC009 /* MGStartViewController.swift */,
+				847C81E1235A70EF00D6E9CD /* DeviceControlViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
